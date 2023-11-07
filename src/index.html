@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC localization installer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="localization installer for Star Citizen">
+</head>
+
+<body>
+    <div class="main">
+        <div class="drop-zone" id="ini">
+            <div class="selected-file"></div>
+            <div class="step">
+                <span class="n">1</span>
+                <span>請將翻譯 .ini 檔拖曳至此處,或者點一下選擇檔案</span>
+            </div>
+            <input id="iniFile" title="ini file" type="file" accept=".ini" style="display: none;" />
+        </div>
+        <div class="drop-zone" id="cfg">
+            <div class="selected-file">
+                <span>已選擇</span>
+            </div>
+            <div class="step">
+                <span class="n">2</span>
+                <span>如要保留user.cfg設定,請將 user.cfg 檔拖曳至此處,或者點一下選擇檔案<span class="small">(非必要,自動安裝忽略此項)</span></span>
+            </div>
+            <input id="cfgFile" title="cfg file" type="file" accept=".cfg" style="display: none;" />
+        </div>
+        <div class="zone">
+            <div class="step">
+                <span class="n">3</span>
+                <span>選擇一種安裝方式</span>
+            </div>
+            <div class="action disabled" id="zip">
+                <span>下載壓縮檔手動解壓至LIVE / PTU資料夾</span>
+            </div>
+
+            <div class="action disabled" id="install">
+                <span>選擇資料夾(LIVE / PTU)自動安裝 <span class="warn">*需同意權限</span></span>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <span>Powered By <a href="https://robertsspaceindustries.com/orgs/TFLL" target="_blank">TFLL Organization</a> &copy; 2023<span id="year"></span> </span>
+    </div>
+</body>
+
+</html>
